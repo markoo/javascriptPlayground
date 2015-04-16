@@ -1,29 +1,41 @@
 ﻿body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    ul {
-        display: table;
-        margin: 0;
-        padding: 0;
-        li {
-            position: relative;
-            border-radius: 7px;
-            padding: 5px;
-            display: table-cell;
-            margin: 0 5px 0 0;
-            border: 2px solid lightgray;
-            background-color: lightgray;
-            height: 30px;
-            width: 100px;
-            list-style-type: none;
-            vertical-align: middle;
-            text-align: center;
-            &:hover {
-                background-color: white;
+    nav {
+        ul {
+            display: table;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                border-radius: 7px;
+                padding: 7px;
+                display: table-cell;
+                margin: 0 5px 0 0;
                 border: 2px solid lightgray;
-                transition: background-color 300ms linear;
-                transition: border 300ms linear;
+                background-color: lightgray;
+                height: 30px;
+                width: 100px;
+                list-style-type: none;
+                vertical-align: middle;
+                text-align: center;
+
+                &:hover {
+                    background-color: white;
+                    border: 2px solid lightgray;
+                    transition: background-color 300ms linear;
+                    transition: border 300ms linear;
+                }
             }
         }
+    }
+
+    #appContent {
+        padding: 7px;
+        background-color: lightgray;
+        border-radius: 7px;
+        margin-top: 7px;
+        width: 1000px;
     }
 }
